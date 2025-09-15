@@ -1,0 +1,6 @@
+## Backed up original redirect to public in .htaccess.bak
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # No automatic redirect to /public — vhost should use the project's public/ as DocumentRoot.
+    # If you previously relied on accessing via project root (without vhost), re-enable the redirect.
+</IfModule>

@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # If the request already targets /public, do nothing
+    RewriteCond %{REQUEST_URI} !^/public/
+    # Redirect everything else into the public folder preserving the path
+    RewriteRule ^(.*)$ /public/$1 [L,R=302]
+</IfModule>
+
+# This file is a backup of the original .htaccess that redirected to /public.

@@ -1,0 +1,17 @@
+﻿# Laravel common ignores
+/vendor/
+/.idea/
+/.vscode/
+/.env
+/node_modules/
+/public/storage
+/storage/*.key
+/.phpunit.result.cache
+/vendor
+
+# Composer
+composer.lock
+
+# OS files
+Thumbs.db
+.DS_Store
